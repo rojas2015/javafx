@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hnt.ShowHNTController">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="A" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onAction="#handleClick" prefHeight="23.0" prefWidth="100.0" text="A" />
+            <Button fx:id="B" mnemonicParsing="false" onAction="#handleClick" prefHeight="23.0" prefWidth="100.0" text="B" />
+            <Button fx:id="C" mnemonicParsing="false" onAction="#handleClick" prefHeight="23.0" prefWidth="100.0" text="C" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="poleA" prefHeight="200.0" prefWidth="200.0" rotate="180.0" />
+            <ListView fx:id="poleB" prefHeight="200.0" prefWidth="200.0" rotate="180.0" />
+            <ListView fx:id="poleC" prefHeight="200.0" prefWidth="200.0" rotate="180.0" />
+         </children>
+      </HBox>
+   </center>
+   <top>
+      <VBox prefHeight="52.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="15.0" prefWidth="600.0" text="HNT" textAlignment="CENTER">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label fx:id="MoveTimes" prefHeight="15.0" prefWidth="365.0" text="Move Times">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="15.0" prefWidth="42.0" text="Capcity:" />
+                  <TextField fx:id="tfcapcity" onAction="#handleTextChange" text="3">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>
